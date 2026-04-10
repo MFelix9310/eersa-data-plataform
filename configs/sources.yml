@@ -1,0 +1,59 @@
+# Fuentes de datos EERSA - Generación 2021
+# Cada entrada describe un archivo fuente con sus metadatos
+
+sources:
+  eersa_generacion_2021:
+    description: "Resúmenes mensuales de generación eléctrica EERSA 2021"
+    owner: "EERSA - Empresa Eléctrica Riobamba S.A."
+    frecuencia: mensual
+    formato: xlsx
+    hoja: "RESUMEN"
+    header_rows: [9, 10]  # Headers en filas 9-10 (1-indexed)
+    data_start_row: 11
+    year: 2021
+    plantas:
+      - ALAO          # Cols C-F: KW, E.Bruta kWh, C.Int kWh, E.Neta kWh
+      - RIO BLANCO    # Cols G-J: KW, E.Bruta kWh, C.Int kWh, E.Neta kWh
+      - C.NIZAG       # Cols K-N: KW, E.Bruta kWh, C.Int kWh, E.Neta kWh
+      - S.N.I.        # Cols O-P: KW, KWh (solo 2 métricas)
+    agregados:
+      - TOTAL EERSA              # Cols T-U: KW, KW-H
+      - ENERGIA ENTREGADA AL MEM # Col V
+      - ENERGIA RECIBIDA DEL MEM # Col W
+    archivos:
+      - nombre: "01 RESUMEN ENERO 2021.xlsx"
+        ruta: "data/raw/01 RESUMEN ENERO 2021.xlsx"
+        mes: 1
+      - nombre: "02 RESUMEN FEBRERO 2021.xlsx"
+        ruta: "data/raw/02 RESUMEN FEBRERO 2021.xlsx"
+        mes: 2
+      - nombre: "03 RESUMEN MARZO 2021.xlsx"
+        ruta: "data/raw/03 RESUMEN MARZO 2021.xlsx"
+        mes: 3
+      - nombre: "04 RESUMEN ABRIL 2021.xlsx"
+        ruta: "data/raw/04 RESUMEN ABRIL 2021.xlsx"
+        mes: 4
+      - nombre: "05 RESUMEN MAYO 2021.xlsx"
+        ruta: "data/raw/05 RESUMEN MAYO 2021.xlsx"
+        mes: 5
+      - nombre: "06 RESUMEN JUNIO 2021.xlsx"
+        ruta: "data/raw/06 RESUMEN JUNIO 2021.xlsx"
+        mes: 6
+      - nombre: "07 RESUMEN JULIO 2021.xlsx"
+        ruta: "data/raw/07 RESUMEN JULIO 2021.xlsx"
+        mes: 7
+      - nombre: "08  RESUMEN AGOSTO 2021.xlsx"
+        ruta: "data/raw/08  RESUMEN AGOSTO 2021.xlsx"
+        mes: 8
+      - nombre: "09 RESUMEN SEPTIEMBRE 2021.xlsx"
+        ruta: "data/raw/09 RESUMEN SEPTIEMBRE 2021.xlsx"
+        mes: 9
+      - nombre: "10 RESUMEN OCTUBRE 2021.xlsx"
+        ruta: "data/raw/10 RESUMEN OCTUBRE 2021.xlsx"
+        mes: 10
+      - nombre: "11 RESUMEN NOVIEMBRE 2021.xlsx"
+        ruta: "data/raw/11 RESUMEN NOVIEMBRE 2021.xlsx"
+        mes: 11
+      - nombre: "12 RESUMEN DICIEMBRE 2021.xlsx"
+        ruta: "data/raw/12 RESUMEN DICIEMBRE 2021.xlsx"
+        mes: 12

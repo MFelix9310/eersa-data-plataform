@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Datos pesados
+data/raw/*.xlsx
+data/raw/*.xls
+data/bronze/
+data/silver/
+data/gold/
+*.parquet
+
+# Entorno
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Great Expectations
+great_expectations/uncommitted/
