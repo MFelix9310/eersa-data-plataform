@@ -141,13 +141,4 @@ python -m src.extractors.eersa_generacion_extractor
 
 ---
 
-## Próximos pasos
 
-- [ ] Dashboard Power BI conectado a `gold_*`
-- [ ] Pipeline de orquestación con Data Factory en Fabric
-- [ ] Tests automáticos con Great Expectations
-- [ ] Extender a múltiples años (2022-2025)
-- [ ] Integrar datos de pérdidas técnicas y no técnicas
-- [ ] Generación automática de formularios regulatorios ARCERNNR (TRA-040, TRA-060)
-
----
